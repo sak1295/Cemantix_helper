@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Pedantix Auto Fill",
+  "version": "1.0",
+  "description": "Extension pour automatiser la saisie de mots sur Pedantix et Cemantix",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://pedantix.certitudes.org/*",
+    "https://cemantix.certitudes.org/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Pedantix Auto Fill",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://pedantix.certitudes.org/*",
+        "https://cemantix.certitudes.org/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
