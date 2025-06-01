@@ -3,7 +3,8 @@
 C'est simple frère :  
 Tu télécharges le dossier, puis tu ouvres ton navigateur **(Chrome obligé sinon c'est chiant)**.
 
-![imagevrai](https://github.com/user-attachments/assets/696c5c9b-d63b-4fea-baf0-051ed2f1bd7c)
+
+![imagevrai](https://github.com/user-attachments/assets/aaef03eb-e20f-41c4-a75a-59205201e4af)
 
 
 Ensuite :
